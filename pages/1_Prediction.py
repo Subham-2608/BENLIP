@@ -8,7 +8,7 @@ import io
 import pickle as pkl
 import joblib
 import os
-import request
+import requests
 
 st.set_page_config( page_title="BENLiP", initial_sidebar_state="expanded", layout="wide")
 col1, col2, col3 = st.columns([1.5, 20, 2])
