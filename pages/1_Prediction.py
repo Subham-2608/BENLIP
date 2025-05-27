@@ -25,10 +25,12 @@ st.markdown("---")
 st.text("")
 
 @st.cache_resource
-def load_model(MODEL_PATH):
-    if not os.path.exists(MODEL_PATH):
-        st.info("Downloading model, please wait...")
-        gdown.download(MODEL_URL, MODEL_PATH, quiet=False)
+def load_model(model_url, model_name):
+    if not os.path.exists(model_name):
+        //st.info("Downloading model, please wait...")
+        gdown.download(model_url, model_name, quiet=False)
+    model =  joblib.load(model_name + ".pkl")
+    retrun model
 
 def process_and_extract(fasta_file, feature_csv, output_csv):
     def one_hot_encode(seq):
@@ -132,7 +134,7 @@ with col2_1:
         
         st.download_button("Download Extracted Features", data=result_df.to_csv(index=False).encode("utf-8"), file_name="extracted features.csv", mime="text/csv", icon=":material/download:")
         with st.spinner("Processing...", show_time=False):
-            model = load_model() joblib.load("static/models/" + selected_feature + ".pkl")
+            model = load_model("https://github.com/Subham-2608/BENLIP/raw/refs/heads/main/static/models/" + selected_feature.replace(" ", "%20") + ".pkl?download=", selected_feature)
             result_df['prediction'] = model.predict(result_df.loc[:,result_df.columns[1:]])
             result_df['pred_class'] = result_df['prediction'].map(class_names)
         predict_button = st.download_button("Prediction & Download", data=result_df.to_csv(columns=['Accession', 'pred_class'], index=False), file_name="prediction.csv", mime="text/csv", icon=":material/download:")
