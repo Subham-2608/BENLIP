@@ -133,7 +133,7 @@ with col2_1:
                         Division of Agricultural Bioinformatics  
                         ICAR-Indian Agricultural Statistics Research Institute  
                         Pusa, New Delhi-110012, India.  
-                        Contact mail: monendra.grover@icar.gov.in''')
+                        Contact mail: monendra.grover@icar.org.in''')
 
 
 st.text("")
