@@ -7,8 +7,8 @@ from Bio.SeqIO import parse
 import io
 import pickle as pkl
 import joblib
-import wget
 import os
+import request
 
 st.set_page_config( page_title="BENLiP", initial_sidebar_state="expanded", layout="wide")
 col1, col2, col3 = st.columns([1.5, 20, 2])
@@ -30,7 +30,9 @@ def load_model(model_url, model_name):
     #st.write(model_url)
     if not os.path.exists(model_name+".pkl"):
         #st.info("Downloading model, please wait...")
-        wget.download(model_url, model_name + ".pkl")
+        response = requests.get(model_url)
+        with open(model_name +".pkl", 'wb') as file:
+            file.write(response.content)
     model =  joblib.load(model_name + ".pkl")
     return model
 
