@@ -141,7 +141,7 @@ with col2_1:
             model = load_model("https://github.com/Subham-2608/BENLIP/raw/refs/heads/main/static/models/" + selected_feature.replace(" ", "%20") + ".pkl?download=", selected_feature)
             result_df['prediction'] = model.predict(result_df.loc[:,result_df.columns[1:]])
             result_df['pred_class'] = result_df['prediction'].map(class_names)
-        predict_button = st.download_button("Prediction & Download", data=result_df.to_csv(columns=['Accession', 'pred_class'], index=False), file_name="prediction.csv", mime="text/csv", icon=":material/download:")
+        predict_button = st.download_button("Prediction & Download", data=result_df.to_csv(columns=['Accession', 'pred_class'], index=False), file_name="prediction.csv", mime="text/csv", icon=":material/download:", on_click="ignore")
 
             
 
