@@ -137,7 +137,7 @@ with col2_1:
         #st.text(result_df)
         
         st.download_button("Download Extracted Features", data=result_df.to_csv(index=False).encode("utf-8"), file_name="extracted features.csv", mime="text/csv", icon=":material/download:")
-        with st.spinner("Processing...", show_time=False):
+        with st.spinner("Preparing for Prediction...", show_time=False):
             model = load_model("https://github.com/Subham-2608/BENLIP/raw/refs/heads/main/static/models/" + selected_feature.replace(" ", "%20") + ".pkl?download=", selected_feature)
             result_df['prediction'] = model.predict(result_df.loc[:,result_df.columns[1:]])
             result_df['pred_class'] = result_df['prediction'].map(class_names)
