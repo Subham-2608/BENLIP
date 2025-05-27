@@ -30,7 +30,7 @@ def load_model(model_url, model_name):
         #st.info("Downloading model, please wait...")
         wget.download(model_url, model_name + ".pkl")
     model =  joblib.load(model_name + ".pkl")
-    retrun model
+    return model
 
 def process_and_extract(fasta_file, feature_csv, output_csv):
     def one_hot_encode(seq):
