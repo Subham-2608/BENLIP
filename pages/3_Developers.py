@@ -107,10 +107,10 @@ with col2_1:
             st.image("static/images/Sayanti_guha_mazumder.jpg")
         with colInCon_2:
             st.markdown('''**Dr. Sayanti Guha Majumdar**  
-    Scientist  (Bioinformatics)
-    Agricultural Knowledge Management Unit  
-    ICAR-Indian Sugarcane Research Institute  
-    Lucknow-226002, India.''')
+                        Scientist
+                        Agricultural Knowledge Management Unit  
+                        ICAR-Indian Sugarcane Research Institute  
+                        Lucknow-226002, India.''')
             
     with st.container(border=True):
         colInCon_1, colInCon_2 = st.columns([1, 3])
