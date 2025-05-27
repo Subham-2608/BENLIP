@@ -31,7 +31,17 @@ with col1_1:
         unsafe_allow_html=True
     )
     st.header("About BENLiP")
-    st.text("BENLiP employs a bagging based ensemble model for nucleosome positioning. BENLiP helps to differentiate the nucleosome and linker sequences for Homo Sapiens, Caenorhabditis elegans, Drosophila Melanogaster and Saccharomyces cerevisiae.")
+    st.markdown(
+        """
+        <div style='text-align: justify;'>
+            BENLiP employs a bagging-based ensemble model for nucleosome positioning. 
+            BENLiP helps to differentiate the nucleosome and linker sequences for 
+            <i>Homo sapiens</i>, <i>Caenorhabditis elegans</i>, <i>Drosophila melanogaster</i>, 
+            and <i>Saccharomyces cerevisiae</i>.
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
 with col2_1:
     st.image("static/images/Workflow.jpg")
 
