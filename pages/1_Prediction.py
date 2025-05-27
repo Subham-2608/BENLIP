@@ -27,8 +27,8 @@ st.text("")
 
 @st.cache_resource
 def load_model(model_url, model_name):
-    st.write(model_url)
-    if not os.path.exists(model_name):
+    #st.write(model_url)
+    if not os.path.exists(model_name+".pkl"):
         #st.info("Downloading model, please wait...")
         wget.download(model_url, model_name + ".pkl")
     model =  joblib.load(model_name + ".pkl")
