@@ -27,10 +27,10 @@ with col1_1:
 
 with col2_1:
      with st.container(border=True, height=160):
-        st.markdown('''<div style='text-align:center'><h5>Director</h5>  
-                    <p>ICAR-Indian Agricultural Statistics Research Institute  </br>
+        st.markdown('''<div style='text-align:center'><b>Director</b></br>  
+                    ICAR-Indian Agricultural Statistics Research Institute  </br>
                     Pusa, New Delhi-110012  </br>
-                    Mail Id: director.iasri@icar.gov.in</p></div>''', unsafe_allow_html=True)
+                    Mail Id: director.iasri@icar.gov.in</div>''', unsafe_allow_html=True)
         
 with col3_1:
      with st.container(border=True, height=160):
