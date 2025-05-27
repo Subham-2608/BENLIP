@@ -1,4 +1,5 @@
+streamlit
 scikit-learn==1.4.2
 biopython
-streamlit
 joblib==1.4.2
+gdown
