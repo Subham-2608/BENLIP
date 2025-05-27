@@ -107,7 +107,7 @@ with col2_1:
             st.image("static/images/Sayanti_guha_mazumder.jpg")
         with colInCon_2:
             st.markdown('''**Dr. Sayanti Guha Majumdar**  
-                        Scientist  
+                        Scientist (Bioinformatics)  
                         Agricultural Knowledge Management Unit  
                         ICAR-Indian Sugarcane Research Institute  
                         Lucknow-226002, India.''')
