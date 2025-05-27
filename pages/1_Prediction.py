@@ -7,6 +7,7 @@ from Bio.SeqIO import parse
 import io
 import pickle as pkl
 import joblib
+import gdown
 
 st.set_page_config( page_title="BENLiP", initial_sidebar_state="expanded", layout="wide")
 col1, col2, col3 = st.columns([1.5, 20, 2])
@@ -23,6 +24,11 @@ with col3:
 st.markdown("---")
 st.text("")
 
+@st.cache_resource
+def load_model(MODEL_PATH):
+    if not os.path.exists(MODEL_PATH):
+        st.info("Downloading model, please wait...")
+        gdown.download(MODEL_URL, MODEL_PATH, quiet=False)
 
 def process_and_extract(fasta_file, feature_csv, output_csv):
     def one_hot_encode(seq):
@@ -123,10 +129,10 @@ with col2_1:
         st.text("Extracted Features:")
         st.dataframe(result_df)
         #st.text(result_df)
-
+        
         st.download_button("Download Extracted Features", data=result_df.to_csv(index=False).encode("utf-8"), file_name="extracted features.csv", mime="text/csv", icon=":material/download:")
         with st.spinner("Processing...", show_time=False):
-            model = joblib.load("static/models/" + selected_feature + ".pkl")
+            model = load_model() joblib.load("static/models/" + selected_feature + ".pkl")
             result_df['prediction'] = model.predict(result_df.loc[:,result_df.columns[1:]])
             result_df['pred_class'] = result_df['prediction'].map(class_names)
         predict_button = st.download_button("Prediction & Download", data=result_df.to_csv(columns=['Accession', 'pred_class'], index=False), file_name="prediction.csv", mime="text/csv", icon=":material/download:")
