@@ -23,7 +23,7 @@ with col1_1:
                     Discipline of Bioinformatics, Graduate School  </br>
                     ICAR-Indian Agricultural Research Institute  </br>
                     Pusa, New Delhi-110012  </br>
-                    Mail Id: sarika@icar.org.in</div>''', unsafe_allow_html=True)
+                    Mail Id: sarika.iasri@icar.org.in</div>''', unsafe_allow_html=True)
 
 with col2_1:
      with st.container(border=True, height=160):
@@ -38,7 +38,7 @@ with col3_1:
                     Division of Agricultural Bioinformatics  </br>
                     ICAR-Indian Agricultural Research Institute  </br>
                     Pusa, New Delhi-110012  </br>
-                    Mail Id: hd.cabin@iasri.res.in</div>''', unsafe_allow_html=True)
+                    Mail Id: girish.jha@icar.org.in</div>''', unsafe_allow_html=True)
 
 st.text("")
 st.markdown("<div style='background-color:#32CD32; text-align:center'><p style='color:white'>Copyright © 2025 ICAR-Indian Agricultural Statistics Research Institute, New Delhi-110012. All rights reserved.</p></div>", unsafe_allow_html=True)
