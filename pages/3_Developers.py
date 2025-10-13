@@ -39,7 +39,7 @@ with col1_1:
                         Post Doctoral Fellow  
                         South Dakota State University  
                         1451 Stadium Rd, Brookings,   
-                        SD 57007, USA.
+                        SD 57007, USA.  
                         Contact mail: diprosinha@gmail.com''')
             
     with st.container(border=True):
@@ -63,7 +63,7 @@ with col1_1:
                         Scientist  
                         Division of Statistical Genetics  
                         ICAR-Indian Agricultural Statistics Research Institute,  
-                        Pusa, New Delhi-110012, India.
+                        Pusa, New Delhi-110012, India.  
                         Contact mail: yeasin.iasri@gmail.com''')
             
     with st.container(border=True):
@@ -75,7 +75,7 @@ with col1_1:
                         Principal Scientist  
                         Division of Agricultural Bioinformatics  
                         ICAR-Indian Agricultural Statistics Research Institute,  
-                        Pusa, New Delhi-110012, India.
+                        Pusa, New Delhi-110012, India.  
                         Contact mail: angadiub@gmail.com''')
 
 with col2_1:
@@ -90,7 +90,7 @@ with col2_1:
                         Discipline of Bioinformatics  
                         The Graduate School  
                         ICAR-Indian Agricultural Research Institute  
-                        Pusa, New Delhi-110012, India.  
+                        Pusa, New Delhi-110012, India.    
                         Contact mail: abhik.iasri@gmail.com''')
             
     with st.container(border=True):
@@ -102,7 +102,7 @@ with col2_1:
                         Scientist  
                         Division of Agricultural Bioinformatics  
                         ICAR-Indian Agricultural Statistics Research Institute  
-                        Pusa, New Delhi-110012, India.
+                        Pusa, New Delhi-110012, India.  
                         Contact mail: murmu.sneha22@gmail.com''')
             
     with st.container(border=True):
@@ -114,8 +114,8 @@ with col2_1:
                         Scientist (Bioinformatics)  
                         Agricultural Knowledge Management Unit  
                         ICAR-Indian Sugarcane Research Institute  
-                        Lucknow-226002, India.
-                         Contact mail: sayanti23gm@gmail.com''')
+                        Lucknow-226002, India.  
+                        Contact mail: sayanti23gm@gmail.com''')
             
     with st.container(border=True):
         colInCon_1, colInCon_2 = st.columns([1, 3])
@@ -126,7 +126,7 @@ with col2_1:
                         Senior Scientist  
                         Division of Agricultural Bioinformatics  
                         ICAR-Indian Agricultural Statistics Research Institute  
-                        Pusa, New Delhi-110012, India.
+                        Pusa, New Delhi-110012, India.  
                         Contact mail: dwij.mishra@gmail.com''')
             
     with st.container(border=True):
