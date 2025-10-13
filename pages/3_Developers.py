@@ -45,7 +45,7 @@ with col1_1:
     with st.container(border=True):
         colInCon_1, colInCon_2 = st.columns([1, 3])
         with colInCon_1:
-            st.image("static/images/himanshu_pic.jpeg")
+            st.image("static/images/himanshu_pic_final.jpeg")
         with colInCon_2:
             st.markdown('''**Dr. Himanshushekhar Chaurasia**  
                         Scientist (Computer Application & IT)  
