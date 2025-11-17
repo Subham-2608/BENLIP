@@ -61,7 +61,7 @@ with col1_1:
         with colInCon_2:
             st.markdown('''**Dr. Md Yeasin**  
                         Scientist  
-                        Division of Statistical Genetics  
+                        Division of Statistical Ecology and Environmental Statistics  
                         ICAR-Indian Agricultural Statistics Research Institute,  
                         Pusa, New Delhi-110012, India.  
                         Contact mail: yeasin.iasri@gmail.com''')
