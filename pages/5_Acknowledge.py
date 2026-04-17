@@ -38,7 +38,7 @@ st.markdown("---")
 # Footer
 st.markdown(
     "<div style='background-color:#32CD32; text-align:center'>"
-    "<p style='color:white'>© 2025 ICAR-Indian Agricultural Statistics Research Institute, New Delhi-110012</p>"
+    "<p style='color:white'>Copyright© 2025 ICAR-Indian Agricultural Statistics Research Institute, New Delhi-110012</p>"
     "</div>",
     unsafe_allow_html=True
 )
